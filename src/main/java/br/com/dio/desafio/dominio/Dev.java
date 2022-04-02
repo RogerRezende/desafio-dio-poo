@@ -66,7 +66,7 @@ public class Dev {
     }
 
     public double calcularTotalXp() {
-        this.conteudosConcluidos.stream()
+        return this.conteudosConcluidos.stream()
                 .mapToDouble(conteudo -> conteudo.calcularXp())
                 .sum();
     }
